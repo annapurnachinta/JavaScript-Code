@@ -2,3 +2,4 @@
 
 ## Cool stopwatch design with JS
 
+![StopWatch Demo](https://github.com/annapurnachinta/JavaScript-Code/tree/master/day1/assets/video/stopwatch-demo.mp4)
