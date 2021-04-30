@@ -2,4 +2,4 @@
 
 ## Cool stopwatch design with JS
 
-![StopWatch](https://user-images.githubusercontent.com/36999742/116687907-89cc6700-a9d3-11eb-8517-f4d08bacfd92.mp4)
+![stopwatch_demo](https://user-images.githubusercontent.com/36999742/116689484-cf8a2f00-a9d5-11eb-9f0c-09e949a4d174.gif)
