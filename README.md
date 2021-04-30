@@ -1,3 +1,3 @@
 ﻿# JavaScript-Code
 
-90 days of JavaScript coding 
+30 days of JavaScript coding 
