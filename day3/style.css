@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1818;
+}
+
+.container label{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 20px;
+    font-size: 24px;
+    color: #727272;
+    transition: all .2s;
+}
+
+.container label:hover{
+    color: #fff;
+}
+
+input{
+    display: none;
+}
+
+#fa-instagram:checked ~ .container .fa-instagram{
+    color: #e1306c;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #252323 50%, #302c2c 50%);
+    box-shadow: 0 0 20px #e1306c;
+}
+
+#fa-twitter:checked ~ .container .fa-twitter{
+    color: #1da1f2;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #252323 50%, #302c2c 50%);
+    box-shadow: 0 0 20px #1da1f2;
+}
+
+#fa-youtube:checked ~ .container .fa-youtube{
+    color: #ff0000;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #252323 50%, #302c2c 50%);
+    box-shadow: 0 0 20px #ff0000;
+}
+
+#fa-github:checked ~ .container .fa-github{
+    color: #f5f5f5;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #252323 50%, #302c2c 50%);
+    box-shadow: 0 0 20px #f5f5f5;
+}
+
+#fa-facebook-f:checked ~ .container .fa-facebook-f{
+    color: #3b5998;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #252323 50%, #302c2c 50%);
+    box-shadow: 0 0 20px #3b5998;
+}
+
+#fa-google:checked ~ .container .fa-google{
+    color: #f4b400;
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #252323 50%, #302c2c 50%);
+    box-shadow: 0 0 20px #f4b400;
+}
