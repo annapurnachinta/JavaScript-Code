@@ -4,7 +4,7 @@ body, html{
     color: #666;
 }
 
-.image1, .image2, .image3{
+.image1, .image2, .image3, .image4{
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -26,6 +26,11 @@ body, html{
 .image3{
     background-image: url('./images/image3.jpg');
     min-height: 500px;
+}
+
+.image4{
+    background-image: url('./images/image4.jpg');
+    min-height: 100%
 }
 
 .text{
