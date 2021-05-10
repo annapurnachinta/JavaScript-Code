@@ -1,4 +1,4 @@
-# Day 6
+# Day 7
 
-## Amazing light text animation with css
+## Cool subscribe box with css
 
