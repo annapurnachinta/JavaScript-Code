@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox{
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 25px;
+    border: 2px solid #fd8999;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.checkbox .toggle{
+    position: absolute;
+    left: -2px;
+    top: -1px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    background: #fd8999;
+    transition: .3s;
+}
+
+.checkbox .toggle .eye{
+    position: absolute;
+    width: 7px;
+    height: 2px;
+    top: 18px;
+    border-radius: 0;
+    background: #fff;
+    transition: .3s;
+}
+
+.checkbox .toggle .eye:nth-child(1){
+    left: 12px;
+}
+
+.checkbox .toggle .eye:nth-child(2){
+    left: 28px;
+}
+
+.checkbox .toggle .mouth{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 14px;
+    top: 30px;
+    border-radius: 30%;
+    border-top: 2px solid #fff;
+    transition: .3s;
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ .checkbox{
+    background: #fd8999;
+}
+
+input:checked ~ .checkbox .toggle{
+    left: 49px;
+    top: 0;
+    width: 46px;
+    height: 46px;
+    background: #fff;
+}
+
+input:checked ~ .checkbox .toggle .eye{
+    background: #fd8999;
+    border: 0;
+    border-radius: 50%;
+    height: 7px;
+    top: 15px;
+}
+
+input:checked ~ .checkbox .toggle .mouth{
+    border-radius: 50%;
+    border-bottom: 3px solid #fd8999;
+    border-top: 0;
+    top: 18px;
+}
