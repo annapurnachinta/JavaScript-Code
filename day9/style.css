@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.bg{
+    background: url('./video/image1.jpg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(95.6vw + 60px);
+    height: calc(90vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading_text{
+    font-size: 50px;
+    color: white;
+}
