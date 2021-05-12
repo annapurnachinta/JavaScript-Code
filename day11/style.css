@@ -58,6 +58,7 @@ nav ul li:hover{
     padding: 20px;
     width: 310px;
     height: 100%;
+    text-transform: capitalize;
     border: 6px solid #189bc7;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
