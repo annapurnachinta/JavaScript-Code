@@ -1,4 +1,4 @@
-# day 12
+# Day 12
 
 ## Profile card with hover animation
 
