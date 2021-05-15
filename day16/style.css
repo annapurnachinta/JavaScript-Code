@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+nav{
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    left: -320px;
+    overflow: hidden;
+    background: #d3e1ff4f;
+    transition: .4s;
+}
+
+nav .brand{
+    position: absolute;
+    color: #2b4c8c;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 32px 40px;
+}
+
+nav label{
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    padding: 5px 8px;
+    color: #2b4c8c;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s;
+}
+
+nav label:hover{
+    background: #2b4c8c;
+    color: #fff;
+}
+
+nav ul{
+    position: absolute;
+    top: 100px;
+}
+
+nav ul li{
+    padding: 25px 40px;
+    color: #2b4c8c;
+    width: 320px;
+    margin-left: -50px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .4s;
+}
+
+nav ul li:hover{
+    animation: hover .6s;
+}
+
+@keyframes hover {
+    50%{
+        transform: translateX(20px) scale(1.1);
+    }
+}
+
+nav ul li i{
+    font-size: 24px;
+}
+
+nav ul li a{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 800;
+    left: 80px;
+}
+
+label span{
+    position: absolute;
+    color: #2b4c8c;
+    border: 2px solid #2b4c8c;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    padding: 9px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+label span:hover{
+    color: #fff;
+    background: #2b4c8c;
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ label span{
+    opacity: 0;
+} 
+
+input:checked ~ nav{
+    left: 0;
+}
+
+input:checked ~ nav ul li{
+    margin-left: 0;
+    opacity: 1;
+}
+
+input:checked ~ nav ul li:nth-child(1){ transition-delay: .2s;}
+input:checked ~ nav ul li:nth-child(2){ transition-delay: .4s;}
+input:checked ~ nav ul li:nth-child(3){ transition-delay: .6s;}
+input:checked ~ nav ul li:nth-child(4){ transition-delay: .8s;}
+input:checked ~ nav ul li:nth-child(5){ transition-delay: 1s;}
+input:checked ~ nav ul li:nth-child(6){ transition-delay: 1.2s;}
+input:checked ~ nav ul li:nth-child(7){ transition-delay: 1.4s;}
