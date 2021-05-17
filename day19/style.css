@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #201f1f;
+}
+
+.container{
+    display: grid;
+}
+
+.container button{
+    cursor: pointer;
+    position: relative;
+    margin: 50px 0;
+    background: transparent;
+    color: #fff;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.container button span{
+    background: #fff;
+    position: absolute;
+    transition: .3s;
+}
+
+.container button span:nth-child(1),
+.container button span:nth-child(3){
+    width: 20px;
+    height: 2px;
+}
+
+.container button span:nth-child(2),
+.container button span:nth-child(4){
+    width: 2px;
+    height: 20px;
+}
+
+.container button span:nth-child(1),
+.container button span:nth-child(2){
+    top: 0;
+    left: 0;
+}
+
+.container button span:nth-child(3),
+.container button span:nth-child(4){
+    bottom: 0;
+    right: 0;
+}
+
+.container button:hover span:nth-child(1),
+.container button:hover span:nth-child(3){
+    width: 100%;
+}
+
+.container button:hover span:nth-child(2),
+.container button:hover span:nth-child(4){
+    height: 100%;
+}
+
+.container button:nth-child(1):hover span{ box-shadow: 0 0 20px #4cee0c;}
+
+.container button:nth-child(2):hover span{ box-shadow: 0 0 20px #ee0c57;}
+
+.container button:nth-child(3):hover span{ box-shadow: 0 0 20px #0cb9ee;}
+
+.container button:nth-child(1) span{ background: #4cee0c; }
+
+.container button:nth-child(2) span{ background: #ee0c57; }
+
+.container button:nth-child(3) span{ background: #0cb9ee; }
+
+.container button:nth-child(1){ color: #4cee0c; }
+
+.container button:nth-child(2){ color: #ee0c57; }
+
+.container button:nth-child(3){ color: #0cb9ee; }
+
+
