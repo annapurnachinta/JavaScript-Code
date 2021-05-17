@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.center ul{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+}
+
+.center ul .text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #1f7a7a;
+    color: #eee;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+}
+
+.center ul:hover .text{
+    opacity: 0;
+    transition: opacity .5s .125s ease-out;
+}
+
+.center ul li{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: #1f7a7a;
+    line-height: 55px;
+    margin: 0 -16px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color .5s ease-out, border-radius .5s .25s ease-out,
+                margin .5s .25s ease-out;
+}
+
+.center ul li:hover{
+    background: #1a6565;
+}
+
+.center ul li i{
+    color: #eee;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 1.7s;
+}
+
+.center ul:hover li i{
+    opacity: 1;
+}
+
+.center ul li:nth-child(1){
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.center ul li:nth-child(5){
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.center ul:hover li{
+    border-radius: 50px;
+    margin: 0 3px;
+}
