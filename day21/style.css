@@ -98,6 +98,6 @@ h3{
     justify-content: center;
     font-weight: bold;
     display: flex;
-    height: 10;
+    height: 0;
     transition: 0.3s ease;
 }
