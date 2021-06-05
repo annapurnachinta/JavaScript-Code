@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    background: rgb(239, 239, 239);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+}
+
+.toggle{
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #30bdf2;
+    color: white;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.toggle:hover{
+    background-color: rgb(46, 178, 226);
+    transition: .4s;
+}
+
+.toggle > .fa-plus{
+    font-size: 60px;
+    transition: .4s;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 1s;
+}
+
+.items > a{
+    text-decoration: none;
+    display: flex;
+    color: #b2b2b2;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+}
+
+a > .fas {
+    font-size: 30px;
+    transition: .3s;
+}
+
+a:hover > .fas{
+    font-size: 40px;
+    color: #30bdf2;
+}
+
+#click:checked ~ .menu .toggle {
+    border-radius: 30px 0 0 30px;
+}
+
+#click:checked ~ .menu #last-item {
+    border-radius: 0 30px 30px 0;
+}
+
+input{
+    display: none;
+}
