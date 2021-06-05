@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An awesome radial menu animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <input type="checkbox" id="click">
+    <label for="click" class="menu">
+        <div class="toggle" onclick="expand()">
+            <i class="fas fa-plus" id="toggle"></i>
+        </div>
+        <div class="items" id="items">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-comment-dots"></i></a>
+            <a href="#"><i class="fas fa-camera"></i></a>
+            <a href="#" id="last-item"><i class="fas fa-bell"></i></a>
+        </div>
+    </label>
 </body>
 </html>
